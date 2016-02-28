@@ -6,6 +6,7 @@ namespace AutoUpdate.Common
 {
     public interface IAutoUpdateApplication
     {
-        void Start(string[] args);
+        void Initialize(IAutoUpdateMetadata metadata);
+        int Start(string[] args);
     }
 }
